@@ -47,6 +47,7 @@
             </plugin>
             <!-- Docker maven plugin -->
             <plugin>
+
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.0.0</version>
