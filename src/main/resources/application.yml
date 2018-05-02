@@ -1,13 +1,14 @@
 spring:
-  profiles: local
-
   datasource:
     driver-class-name:  oracle.jdbc.driver.OracleDriver
     url: jdbc:oracle:thin:@server.database.psd:1521:orcl
     username: psd
     password: psd
-
   jpa:
     hibernate:
       ddl-auto: update
+
     show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
